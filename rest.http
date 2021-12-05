@@ -1,0 +1,14 @@
+### get a task
+GET http://localhost:3000
+
+### get a task detail
+GET http://localhost:3000/61ac518671bf596bd8e2cd8c
+
+### create a task
+POST  http://localhost:3000/?name='vie2'&date='5/12/2021'
+
+### get a task detail
+GET http://localhost:3000/61ac518671bf596bd8e2cd8c
+
+### get a task detail
+GET http://localhost:3000/61ac518671bf596bd8e2cd8c
