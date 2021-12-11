@@ -5,7 +5,6 @@ mongoose.connect('mongodb://localhost:27017/todo_db')
 
 const TaskSchema = new Schema({
   name: String,
-  date: Date,
 });
 
 const Task = mongoose.model('Task',TaskSchema)

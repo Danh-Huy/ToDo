@@ -5,19 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo</title>
+    <title>Todo</title>
+    <link rel="stylesheet" href="/public/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
-    </head>
-<body>
+</head>
 
+<body>
+    <div class="wrapper">
+        <div class="app">
+            <div class="todo-header mb-3">
+                <h2>Todo App</h2>
+            </div>
+            <div class="todo-add mb-3">
+                <form action="">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary" id="btnAdd">Thêm</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="todo-lists">
+                <ul class="list-group" id='content'>
+                    <li class="list-group-item">An item <a href="" class="btn btn-danger">Xoá</a></li>
+                    <li class="list-group-item">A second item <a href="" class="btn btn-danger">Xoá</a></li>
+                    <li class="list-group-item">A third item <a href="" class="btn btn-danger">Xoá</a></li>
+                    <li class="list-group-item">A fourth item <a href="" class="btn btn-danger">Xoá</a></li>
+                    <li class="list-group-item">And a fifth one <a href="" class="btn btn-danger">Xoá</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="public/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
-<script src="/js/main.js"></script>
+
+
 </html>

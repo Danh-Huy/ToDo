@@ -3,19 +3,18 @@ const route = express.Router()
 const Task = require('../Models/Task')
 
 function convertStringToDate(StringDate){
-    var arr =  StringDate.split('-')
-    var year = parseInt(arr[2])
-    var month = parseInt(arr[1]) - 1
-    var day = parseInt(arr[0]) + 1
-    return new Date(year,month,day)
+    return StringDate
 }
 
 route.get('/',(req,res,next)=>{
     Task.find({}).lean()
     .then(data =>{
-        res.json(data)
+        console.log(data)
+       res.json(data)
     })
-    .catch(next)
+    .catch(err=>{
+        res.status(500).json(err)
+    })
 })
 
 route.get('/:id',(req,res,next)=>{
